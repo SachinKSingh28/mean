@@ -1,7 +1,6 @@
 web:
+  container_name: web
   build: .
-  links:
-   - db
   ports:
    - "3000:3000"
    - "35729:35729"
@@ -10,6 +9,7 @@ web:
   environment: 
    NODE_ENV: development
 db:
+  container_name: db
   image: mongo:latest
   ports: 
    - "27017:27017"
