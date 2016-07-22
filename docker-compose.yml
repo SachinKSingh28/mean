@@ -1,6 +1,7 @@
 web:
   container_name: web
   build: .
+  net: ${DOCKER_NETWORK_NAME}
   ports:
    - "3000:3000"
    - "35729:35729"
@@ -10,6 +11,7 @@ web:
    NODE_ENV: development
 db:
   container_name: db
+  net: ${DOCKER_NETWORK_NAME}
   image: mongo:latest
   ports: 
    - "27017:27017"
