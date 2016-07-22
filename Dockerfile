@@ -1,6 +1,6 @@
-FROM node
+FROM node:0.10.46
 
-MAINTAINER Matthias Luebken, matthias@catalyst-zero.com
+MAINTAINER  Sachin K Singh, sachin280389@gmail.com
 
 WORKDIR /home/mean
 
